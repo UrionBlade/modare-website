@@ -1,0 +1,572 @@
+:root {
+  /* Typography */
+  --color-heading-primary: #1a1a1a;
+  --color-heading-secondary: #3c3c3c;
+
+  --color-paragraph: #4b4b4b;
+
+  /* Button (solid style) */
+  --color-button-solid-bg: #2c2c2c;
+  --color-button-solid-text: #ffffff;
+  --color-button-solid-hover-bg: #000000;
+
+  /* Button (outline) */
+  --color-button-outline-border: #3c3c3c;
+  --color-button-outline-text: #3c3c3c;
+  --color-button-outline-hover-bg: rgba(0, 0, 0, 0.05);
+
+  /* Button (ghost) */
+  --color-button-ghost-text: #3c3c3c;
+  --color-button-ghost-hover-bg: rgba(0, 0, 0, 0.05);
+
+  --color-button-link-text: #1a1a1a;
+
+  /* Inputs */
+  --color-input-bg: #ffffff;
+  --color-input-text: #1a1a1a;
+  --color-input-placeholder: #888888;
+  --color-input-border: #cccccc;
+  --color-input-border-focus: #1a1a1a;
+  --color-input-border-error: #d32f2f;
+  --color-input-text-error: #b71c1c;
+
+  --color-label: #2b2b2b;
+
+  /* Select */
+  --color-select-bg: #ffffff;
+  --color-select-text: #1a1a1a;
+  --color-select-placeholder: #888888;
+  --color-select-border: #cccccc;
+  --color-select-border-focus: #1a1a1a;
+  --color-select-border-error: #d32f2f;
+  --color-select-check-item: #2c2c2c;
+
+  --color-select-arrow: #6b6b6b;
+  --color-select-hover-bg: #f5f5f5;
+
+  /* Checkbox */
+  --color-checkbox-bg: #ffffff;
+  --color-checkbox-border: #cccccc;
+  --color-checkbox-hover-border: #1a1a1a;
+  --color-checkbox-checked-bg: #1a1a1a;
+  --color-checkbox-checked-border: #1a1a1a;
+  --color-checkbox-icon: #ffffff;
+
+  --color-checkbox-disabled-bg: #f0f0f0;
+  --color-checkbox-disabled-border: #e0e0e0;
+  --color-checkbox-disabled-icon: #cccccc;
+
+  --color-checkbox-label: #1a1a1a;
+  --color-checkbox-description: #6b6b6b;
+
+  --color-badge-gray-bg: #f3f4f6;
+  --color-badge-gray-text: #1f2937;
+  --color-badge-gray-border: #d1d5db;
+  --color-badge-gray-solid-bg: #4b5563;
+  --color-badge-gray-solid-text: #ffffff;
+
+  --color-badge-red-bg: #fef2f2;
+  --color-badge-red-text: #b91c1c;
+  --color-badge-red-border: #fecaca;
+  --color-badge-red-solid-bg: #ef4444;
+  --color-badge-red-solid-text: #ffffff;
+
+  --color-badge-orange-bg: #fff7ed;
+  --color-badge-orange-text: #c2410c;
+  --color-badge-orange-border: #fed7aa;
+  --color-badge-orange-solid-bg: #f97316;
+  --color-badge-orange-solid-text: #ffffff;
+
+  --color-badge-yellow-bg: #fefce8;
+  --color-badge-yellow-text: #92400e;
+  --color-badge-yellow-border: #fef08a;
+  --color-badge-yellow-solid-bg: #eab308;
+  --color-badge-yellow-solid-text: #ffffff;
+
+  --color-badge-green-bg: #ecfdf5;
+  --color-badge-green-text: #065f46;
+  --color-badge-green-border: #a7f3d0;
+  --color-badge-green-solid-bg: #10b981;
+  --color-badge-green-solid-text: #ffffff;
+
+  --color-badge-blue-bg: #eff6ff;
+  --color-badge-blue-text: #1d4ed8;
+  --color-badge-blue-border: #bfdbfe;
+  --color-badge-blue-solid-bg: #3b82f6;
+  --color-badge-blue-solid-text: #ffffff;
+
+  --color-badge-indigo-bg: #eef2ff;
+  --color-badge-indigo-text: #4338ca;
+  --color-badge-indigo-border: #c7d2fe;
+  --color-badge-indigo-solid-bg: #6366f1;
+  --color-badge-indigo-solid-text: #ffffff;
+
+  --color-badge-purple-bg: #f5f3ff;
+  --color-badge-purple-text: #6b21a8;
+  --color-badge-purple-border: #e9d5ff;
+  --color-badge-purple-solid-bg: #a855f7;
+  --color-badge-purple-solid-text: #ffffff;
+
+  --color-badge-pink-bg: #fdf2f8;
+  --color-badge-pink-text: #be185d;
+  --color-badge-pink-border: #fbcfe8;
+  --color-badge-pink-solid-bg: #ec4899;
+  --color-badge-pink-solid-text: #ffffff;
+
+  --color-switch-track: #e5e7eb;
+  --color-switch-track-border: transparent;
+  --color-switch-track-checked: #7c3aed;
+
+  --color-switch-thumb: #ffffff;
+
+  --color-switch-ring-hover: #7c3aed;
+  --color-switch-ring-focus: #7c3aed;
+
+  --color-radio-border: #d1d5db;
+  --color-radio-checked-bg: #7c3aed;
+  --color-radio-dot: #ffffff;
+  --color-radio-label: #111827;
+
+  --color-chip-bg: #ffffff;
+  --color-chip-text: #111827;
+  --color-chip-border: #e5e7eb;
+
+  --color-chip-hover-bg: #f3f4f6;
+  --color-chip-hover-border: #d1d5db;
+
+  --color-chip-count: #6b7280;
+
+  --color-chip-selected-bg: #7c3aed;
+  --color-chip-selected-border: #7c3aed;
+  --color-chip-selected-dot: #ffffff;
+
+  --color-video-placeholder: #d1d5db;
+  --color-video-overlay: rgba(0, 0, 0, 0.4);
+  --color-video-button-bg: rgba(0, 0, 0, 0.6);
+  --color-video-icon: #ffffff;
+
+  --color-slider-track: #e5e7eb;
+  --color-slider-range: #7c3aed;
+  --color-slider-thumb-bg: #ffffff;
+  --color-slider-thumb-border: #7c3aed;
+  --color-slider-thumb-icon: #7c3aed;
+  --color-slider-tooltip-bg: #ffffff;
+  --color-slider-tooltip-text: #111827;
+  --color-slider-label: #4b5563;
+  --color-slider-disabled-thumb-bg: #f3f4f6;
+  --color-slider-disabled-track: #e5e7eb;
+  --color-slider-disabled-range: #d1d5db;
+
+  --color-tooltip-bg: #111827;
+  --color-tooltip-text: #ffffff;
+
+  --color-datepicker-bg: #ffffff;
+  --color-datepicker-border: #d1d5db;
+  --color-datepicker-text: #111827;
+  --color-datepicker-placeholder: #9ca3af;
+  --color-datepicker-label: #333;
+  --color-datepicker-description: #666;
+  --color-datepicker-error: #dc2626;
+  --color-datepicker-asterisk: #dc2626;
+  --color-datepicker-hover: #f3f4f6;
+  --color-datepicker-selected-bg: #7c3aed;
+  --color-datepicker-selected-text: #ffffff;
+  --color-datepicker-disabled-text: #d1d5db;
+  --color-datepicker-today-border: #7c3aed;
+  --color-datepicker-outside-month: #9ca3af;
+  --color-datepicker-border: #d1d5db;
+  --color-datepicker-border-focus: #4f46e5;
+  --color-datepicker-error: #dc2626;
+  --color-datepicker-hover: #f9fafb;
+
+  --color-toast-bg: #ffffff;
+  --color-toast-text: #1f2937;
+
+  --color-toast-info-bg: #dbeafe;
+  --color-toast-info-text: #1e40af;
+
+  --color-toast-success-bg: #dcfce7;
+  --color-toast-success-text: #166534;
+
+  --color-toast-warning-bg: #fef3c7;
+  --color-toast-warning-text: #92400e;
+
+  --color-toast-error-bg: #fee2e2;
+  --color-toast-error-text: #991b1b;
+
+  --color-rating-icon: #fbbf24;
+  --color-rating-icon-hover: #f59e0b;
+  --color-rating-icon-unselected: #cbd5e1;
+
+  --color-skeleton: #cbd5e1;
+
+  --color-cookie-bg: #ffffff;
+  --color-cookie-border: #e5e7eb;
+  --color-cookie-text: #1f2937;
+  --color-cookie-subtext: #6b7280;
+  --color-cookie-primary: #7c3aed;
+  --color-cookie-primary-hover: #6d28d9;
+  --color-cookie-icon: #9ca3af;
+  --color-cookie-icon-hover: #6b7280;
+
+  --color-dialog-backdrop-bg: rgba(0, 0, 0, 0.5);
+  --color-dialog-content-bg: #ffffff;
+  --color-dialog-title-text: rgba(17, 24, 39, 0.8);
+  --color-dialog-desc-text: rgba(75, 85, 99, 0.8);
+  --color-dialog-close-icon: #6b7280;
+  --color-dialog-close-icon-hover: #f3f4f6;
+
+  --color-tabs-simple-selected-bg: #f0ebf9;
+  --color-tabs-simple-selected: #6941c6;
+  --color-tabs-simple: #717680;
+
+  --color-tabs-underline-selected: #6941c6;
+  --color-tabs-underline: #717680;
+  --color-tabs-underline-list-border-color: #e9eaeb;
+
+  --color-tabs-embossed-selected: #414651;
+  --color-tabs-embossed-selected-bg: #ffffff;
+  --color-tabs-embossed: #717680;
+  --color-tabs-embossed-list-bg: #fafafa;
+  --color-tabs-embossed-list-border-color: #e9eaeb;
+  --color-avatar-bg: #e9d5ff;
+  --color-avatar-ring: #7c3aed;
+
+  --color-pagination-bg: #ffffff;
+  --color-pagination-text: #374151;
+  --color-pagination-border: #e5e7eb;
+
+  --color-pagination-hover-bg: #f3f4f6;
+  --color-pagination-hover-text: #111827;
+
+  --color-pagination-active-bg: #7c3aed;
+  --color-pagination-active-text: #ffffff;
+
+  --color-pagination-disabled-text: #9ca3af;
+
+  --color-pagination-border: #e5e7eb;
+  --color-pagination-border-hover: #d1d5db;
+  --color-pagination-border-active: #7c3aed;
+  --color-pagination-border-disabled: #e5e7eb;
+
+  --color-accordion-bg: #ffffff;
+  --color-accordion-border: #e5e7eb;
+  --color-accordion-text: #111827;
+  --color-accordion-icon: #6b7280;
+  --color-accordion-hover-bg: #f9fafb;
+  --color-accordion-hover-text: #111827;
+  --color-accordion-disabled-bg: #f3f4f6;
+  --color-accordion-disabled-text: #9ca3af;
+
+  --color-breadcrumb-text: #4b5563;
+  --color-breadcrumb-hover: #1f2937;
+  --color-breadcrumb-active: #7c3aed;
+  --color-breadcrumb-divider: #d1d5db;
+  --color-breadcrumb-bg: transparent;
+
+  --color-creditcard-bg-from: #7e22ce;
+  --color-creditcard-bg-to: #5b21b6;
+
+  --color-creditcard-logo-bg: #ffffff20;
+  --color-creditcard-number: #ffffff;
+  --color-creditcard-name: #ffffff;
+  --color-creditcard-expiry: #ffffff;
+  --color-creditcard-title: #ffffff;
+  --color-creditcard-cvv-label: #ffffff;
+  --color-creditcard-input-placeholder: #9ca3af;
+  --color-creditcard-input: #ffffff;
+
+  --spacing-button-x: 1.75rem;
+  --spacing-button-y: 0.75rem;
+  --spacing-input-x: 0.875rem;
+  --spacing-input-y: 0.625rem;
+
+  --spacing-select-x: 0.75rem;
+  --spacing-select-y: 0.625rem;
+
+  --spacing-select-right-icon: 2.25rem;
+
+  --spacing-checkbox: 1.25rem;
+
+  --spacing-switch-width: 2.5rem;
+  --spacing-switch-height: 1.5rem;
+  --spacing-switch-thumb: 1.25rem;
+
+  --spacing-radio: 1.125rem;
+
+  --spacing-chip-x: 0.5rem;
+  --spacing-chip-y: 0.125rem;
+
+  --spacing-video-button: 0.5rem;
+  --spacing-video-controls: 0.5rem;
+
+  --spacing-slider-tooltip-x: 0.5rem;
+  --spacing-slider-tooltip-y: 0.25rem;
+
+  --spacing-slider-track: 0.25rem;
+  --spacing-slider-thumb: 1.25rem;
+
+  --spacing-tooltip-x: 0.75rem;
+  --spacing-tooltip-y: 0.5rem;
+
+  --spacing-datepicker-cell: 0.5rem;
+  --spacing-datepicker-nav: 0.75rem;
+  --spacing-datepicker-x: 0.875rem;
+  --spacing-datepicker-y: 0.625rem;
+  --spacing-datepicker-content: 0.625rem;
+  --spacing-datepicker-arrow: 0.5rem;
+
+  --spacing-toast-padding: 0.75rem;
+
+  --spacing-modal-sm: 24rem;
+  --spacing-modal-md: 32rem;
+  --spacing-modal-lg: 48rem;
+  --spacing-rating-icon-size: 1.5rem;
+  --spacing-rating-gap: 0.25rem;
+
+  --spacing-cookie-mobile: 1rem;
+  --spacing-cookie-desktop: 1.5rem;
+  --spacing-cookie-gap: 1rem;
+
+  --spacing-tabs-horizontal-simple-trigger-x: 0.75rem;
+  --spacing-tabs-horizontal-simple-trigger-y: 0.5rem;
+  --spacing-tabs-horizontal-simple-trigger-sm: 2.25rem;
+  --spacing-tabs-horizontal-simple-trigger-lg: 2.75rem;
+  --spacing-tabs-horizontal-simple-list-margin: 1rem;
+  --spacing-tabs-horizontal-simple-list-gap: 0.25rem;
+  --spacing-tabs-horizontal-simple-content-padding-l: 1rem;
+  --spacing-tabs-horizontal-simple-content-padding-r: 1rem;
+  --spacing-tabs-horizontal-simple-content-padding-t: 0rem;
+  --spacing-tabs-horizontal-simple-content-padding-b: 1rem;
+
+  --spacing-tabs-vertical-simple-trigger-x: 0.75rem;
+  --spacing-tabs-vertical-simple-trigger-y: 0.5rem;
+  --spacing-tabs-vertical-simple-trigger-h-sm: 2.25rem;
+  --spacing-tabs-vertical-simple-trigger-h-lg: 2.75rem;
+  --spacing-tabs-vertical-simple-list-margin: 1rem;
+  --spacing-tabs-vertical-simple-list-gap: 0.25rem;
+  --spacing-tabs-vertical-simple-content-margin: 1rem;
+
+  --spacing-tabs-horizontal-underline-trigger-x: 0.25rem;
+  --spacing-tabs-horizontal-underline-trigger-t: 0rem;
+  --spacing-tabs-horizontal-underline-trigger-b: 0.75rem;
+  --spacing-tabs-horizontal-underline-trigger-h-sm: 2rem;
+  --spacing-tabs-horizontal-underline-trigger-h-lg: 2.25rem;
+  --spacing-tabs-horizontal-underline-list-margin: 1rem;
+  --spacing-tabs-horizontal-underline-list-gap: 0.75rem;
+  --spacing-tabs-horizontal-underline-content-padding-l: 1rem;
+  --spacing-tabs-horizontal-underline-content-padding-r: 1rem;
+  --spacing-tabs-horizontal-underline-content-padding-t: 0rem;
+  --spacing-tabs-horizontal-underline-content-padding-b: 1rem;
+
+  --spacing-tabs-vertical-underline-trigger-x: 0.75rem;
+  --spacing-tabs-vertical-underline-trigger-y: 0.125rem;
+  --spacing-tabs-horizontal-underline-trigger-h-sm: 2rem;
+  --spacing-tabs-horizontal-underline-trigger-h-lg: 2.25rem;
+  --spacing-tabs-vertical-underline-list-margin: 1rem;
+  --spacing-tabs-vertical-underline-list-gap: 0.5rem;
+  --spacing-tabs-vertical-underline-content-margin: 1rem;
+
+  --spacing-tabs-horizontal-embossed-trigger-x: 0.75rem;
+  --spacing-tabs-horizontal-embossed-trigger-y: 0.5rem;
+  --spacing-tabs-horizontal-embossed-trigger-h-sm: 2.25rem;
+  --spacing-tabs-horizontal-embossed-trigger-h-lg: 2.75rem;
+  --spacing-tabs-horizontal-embossed-list-padding: 0.25rem;
+  --spacing-tabs-horizontal-embossed-list-margin: 1rem;
+  --spacing-tabs-horizontal-embossed-list-gap: 0.25rem;
+  --spacing-tabs-horizontal-embossed-content-padding-l: 1.25rem;
+  --spacing-tabs-horizontal-embossed-content-padding-r: 0.75rem;
+  --spacing-tabs-horizontal-embossed-content-padding-t: 0rem;
+  --spacing-tabs-horizontal-embossed-content-padding-b: 1.25rem;
+
+  --spacing-tabs-vertical-max-width: 5rem;
+
+  --spacing-tabs-vertical-embossed-trigger-x: 0.75rem;
+  --spacing-tabs-vertical-embossed-trigger-y: 0.5rem;
+  --spacing-tabs-vertical-embossed-trigger-h-sm: 2.25rem;
+  --spacing-tabs-vertical-embossed-trigger-h-lg: 2.75rem;
+  --spacing-tabs-vertical-embossed-list-padding: 0.25rem;
+  --spacing-tabs-vertical-embossed-list-margin: 1rem;
+  --spacing-tabs-vertical-embossed-list-gap: 0.25rem;
+  --spacing-tabs-vertical-embossed-content-margin: 1rem;
+  --spacing-avatar-sm: 3rem;
+  --spacing-avatar-md: 5rem;
+  --spacing-avatar-lg: 7rem;
+
+  --spacing-pagination-px: 0.75rem;
+  --spacing-pagination-py: 0.5rem;
+  --spacing-pagination-gap: 0.5rem;
+
+  --spacing-accordion-x: 1rem;
+  --spacing-accordion-y: 0.75rem;
+  --spacing-accordion-gap: 0.5rem;
+
+  --spacing-breadcrumb-gap: 0.5rem;
+
+  --spacing-creditcard: 1rem;
+  --spacing-creditcard-input-x: 0rem;
+  --spacing-creditcard-input-y: 0.5rem;
+  --spacing-creditcard-x: 1.5rem;
+  --spacing-creditcard-y: 1rem;
+
+  --radius-button: 0.5rem;
+  --radius-input: 0.375rem;
+  --radius-select: 0.375rem;
+  --radius-switch: 1rem;
+  --radius-chip: 9999px;
+  --radius-video: 0.75rem;
+  --radius-video-button: 9999px;
+  --radius-slider-track: 0.25rem;
+  --radius-slider-thumb: 9999px;
+  --radius-tooltip: 0.5rem;
+  --radius-datepicker: 0.5rem;
+  --radius-datepicker-selected: 9999px;
+  --radius-toast: 0.5rem;
+  --radius-cookie: 0.75rem;
+
+  --radius-tabs-simple-selected: 0.6rem;
+
+  --radius-tabs-embossed-selected: 0.6rem;
+  --radius-tabs-embossed-list: 1rem;
+
+  --border-width-tabs-underline-selected-tab-border: 0.2rem;
+  --border-width-tabs-underline-list-border: 0.1rem;
+
+  --border-width-tabs-embossed-list-border: 0.1rem;
+  --radius-pagination: 0.375rem;
+  --radius-accordion: 0.5rem;
+
+  --radius-breadcrumb: 0.375rem;
+
+  --radius-creditcard: 1rem;
+  --radius-creditcard-input: 0.5rem;
+
+  --text-heading-h1: 8rem;
+  --text-heading-h2: 2rem;
+  --text-heading-h3: 1.875rem;
+  --text-heading-h4: 1.5rem;
+  --text-heading-h5: 1.25rem;
+  --text-heading-h6: 1.125rem;
+  --text-paragraph: 1rem;
+  --text-chip: 0.875rem;
+  --text-slider-tooltip: 0.875rem;
+  --text-slider-label: 0.75rem;
+  --text-tooltip: 0.875rem;
+  --text-datepicker-day: 0.875rem;
+  --text-datepicker-control: 0.875rem;
+  --text-datepicker-label: 1rem;
+  --text-cookie-base: 0.875rem;
+  --text-cookie-small: 0.75rem;
+  --text-dialog-title: 1.125rem;
+  --text-dialog-desc: 0.875rem;
+  --text-avatar-text-sm: 0.875rem;
+  --text-avatar-text-md: 1.275rem;
+  --text-avatar-text-lg: 1.875rem;
+  --text-pagination: 0.875rem;
+
+  --text-breadcrumb: 0.875rem;
+
+  --text-tabs-simple-sm: 0.875rem;
+  --text-tabs-simple-lg: 1rem;
+  --text-tabs-underline-sm: 0.875rem;
+  --text-tabs-underline-lg: 1rem;
+  --text-tabs-embossed-sm: 0.875rem;
+  --text-tabs-embossed-lg: 1rem;
+
+  --text-creditcard-title: 1rem;
+  --text-creditcard-number: 1.2rem;
+  --text-creditcard-label: 0.75rem;
+
+  --leading-heading-h1: 3.75rem;
+  --leading-heading-h2: 2.75rem;
+  --leading-heading-h3: 2.375rem;
+  --leading-heading-h4: 2rem;
+  --leading-heading-h5: 1.875rem;
+  --leading-heading-h6: 1.75rem;
+  --leading-paragraph: 1.6rem;
+
+  --leading-tabs-simple-sm: 1.25rem;
+  --leading-tabs-simple-lg: 1.5rem;
+  --leading-tabs-underline-sm: 1.25rem;
+  --leading-tabs-underline-lg: 1.5rem;
+  --leading-tabs-embossed-sm: 1.25rem;
+  --leading-tabs-embossed-lg: 1.5rem;
+
+  --tracking-heading-h1: -0.05em;
+  --tracking-heading-h2: -0.01em;
+  --tracking-heading-h3: -0.01em;
+  --tracking-heading-h4: -0.005em;
+  --tracking-heading-h5: -0.005em;
+  --tracking-heading-h6: -0.005em;
+  --tracking-paragraph: -0.005em;
+
+  --font-sans: "Poppins";
+  --font-serif: "Playfair Display";
+  --font-mono: "JetBrains Mono", SFMono-Regular, Menlo, monospace;
+
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  --font-wight-button: 600;
+  --font-weight-input: 400;
+  --font-weight-label: 500;
+
+  --font-checkbox-label-weight: 600;
+  --font-checkbox-description-weight: 400;
+  --font-weight-chip: 500;
+  --font-weight-slider-label: 500;
+
+  --font-dialog-title-weight: 600;
+  --font-dialog-desc-weight: 400;
+
+  --font-weight-tabs-simple-selected-weight: 600;
+  --font-weight-tabs-simple-weight: 600;
+
+  --font-weight-tabs-underline-selected-weight: 600;
+  --font-weight-tabs-underline-weight: 600;
+
+  --font-weight-tabs-embossed-selected-weight: 600;
+  --font-weight-tabs-embossed-weight: 600;
+
+  --font-breadcrumb: 500;
+
+  --shadow-switch-focus: 0 0 0 3px rgba(124, 58, 237, 0.4);
+  --shadow-radio-focus: 0 0 0 3px rgba(124, 58, 237, 0.5);
+  --shadow-slider-thumb-focus: 0 0 0 3px rgba(124, 58, 237, 0.4);
+  --shadow-slider-thumb: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-slider-tooltip: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-tooltip: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-datepicker: 0 4px 10px rgba(0, 0, 0, 0.05);
+  --shadow-cookie:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+
+  --shadow-tabs-embossed-selected: 0 1px 2px -1px rgba(10, 13, 18, 0.1);
+
+  --transition-slider: all 0.2s ease-in-out;
+
+  --opacity-radio-disabled: 0.4;
+  --opacity-switch-disabled: 0.4;
+  --opacity-chip-disabled: 0.5;
+  --opacity-video-disabled: 0.5;
+  --opacity-slider-disabled: 0.5;
+  --opacity-avatar: 0.6;
+
+  --z-datepicker: 50;
+
+  --blur-dialog: blur(4px);
+
+  --border-accordion: 1px;
+
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+}

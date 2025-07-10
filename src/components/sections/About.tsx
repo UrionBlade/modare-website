@@ -1,0 +1,74 @@
+"use client";
+
+import {
+  Flex,
+  Grid,
+  Heading,
+  Paragraph,
+  Section,
+  useDeviceDetection,
+} from "@watermelonbros/watermelon-ui";
+import Image from "next/image";
+
+const About = () => {
+  const { isMobile } = useDeviceDetection();
+  return (
+    <Section
+      className="h-screen overflow-x-hidden pt-56"
+      padded={false}
+      id="about"
+    >
+      <Grid columns={12} gap={24} className="items-center">
+        {!isMobile && (
+          <div className="col-span-12 lg:col-span-6 rounded-2xl relative aspect-[4/3] hover:scale-95 transition-all duration-300 ease-in-out overflow-hidden">
+            <Image
+              src="/images/chisiamo.webp"
+              alt="Showroom Modare o dettaglio tessuto"
+              fill
+              className="object-cover transition-transform duration-300 ease-in-out will-change-transform hover:scale-120"
+            />
+          </div>
+        )}
+
+        <div className="col-span-12 lg:col-span-6">
+          <Flex direction="col" gap={6}>
+            <Heading variant="h2" as="h2" font="serif" weight="medium">
+              Chi siamo
+            </Heading>
+            <Paragraph
+              className="text-paragraph leading-relaxed max-w-prose"
+              font="serif"
+            >
+              Fondata nel 2016 a Busto Arsizio, <strong>Modare</strong> è il
+              risultato di oltre vent’anni di esperienza nel settore tessile.
+              Offriamo una selezione curata di tessuti di qualità per
+              professionisti della moda, sartorie e aziende, con un servizio
+              personalizzato e una forte attenzione al cliente.
+            </Paragraph>
+            <Paragraph
+              className="text-paragraph leading-relaxed max-w-prose"
+              font="serif"
+            >
+              Dai lini ai pizzi, dal cotone alle fantasie stampate, il nostro
+              catalogo è pensato per soddisfare ogni esigenza estetica e
+              produttiva. Crediamo nell’eleganza che parte dalla materia prima.
+            </Paragraph>
+          </Flex>
+        </div>
+
+        {isMobile && (
+          <div className="col-span-12 lg:col-span-6 rounded-2xl relative aspect-[4/3] hover:scale-95 transition-all duration-300 ease-in-out overflow-hidden">
+            <Image
+              src="/images/chisiamo.webp"
+              alt="Showroom Modare o dettaglio tessuto"
+              fill
+              className="object-cover transition-transform duration-300 ease-in-out will-change-transform hover:scale-120"
+            />
+          </div>
+        )}
+      </Grid>
+    </Section>
+  );
+};
+
+export default About;
