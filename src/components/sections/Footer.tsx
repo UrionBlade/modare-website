@@ -2,7 +2,6 @@
 
 import { FacebookLogoIcon, InstagramLogoIcon } from "@phosphor-icons/react";
 import { Button, Flex } from "@watermelonbros/watermelon-ui";
-import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -38,35 +37,26 @@ export default function Footer() {
 
         {/* Colonna 3: Social */}
         <Flex direction="row" gap={6} align="center">
-          <Link
+          <Button
+            variant="link"
             href="https://www.instagram.com/modare.srl/"
             target="_blank"
             rel="noopener"
             className="hover:opacity-80 transition"
           >
             <InstagramLogoIcon size={28} weight="duotone" />
-          </Link>
-          <Link
+          </Button>
+          <Button
+            variant="link"
             href="https://www.facebook.com/modaresrl"
             target="_blank"
             rel="noopener"
             className="hover:opacity-80 transition"
           >
             <FacebookLogoIcon size={28} weight="duotone" />
-          </Link>
+          </Button>
         </Flex>
       </div>
-      {/* <CookieBanner
-        href="/cookie-policy"
-        label="Utilizziamo i cookie"
-        caption="Per offrirti un'esperienza migliore, utilizziamo i cookie. Per saperne di più, "
-        linkString="clicca qui"
-        buttonLeftText="Solo necessari"
-        buttonRightText="Accetta tutti"
-        isOpen={consent === "unset"}
-        onButtonRightClick={() => setConsent("essential")}
-        onButtonLeftClick={() => setConsent("all")}
-      /> */}
     </footer>
   );
 }

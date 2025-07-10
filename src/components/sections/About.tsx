@@ -6,12 +6,10 @@ import {
   Heading,
   Paragraph,
   Section,
-  useDeviceDetection,
 } from "@watermelonbros/watermelon-ui";
 import Image from "next/image";
 
 const About = () => {
-  const { isMobile } = useDeviceDetection();
   return (
     <Section
       className="h-screen overflow-x-hidden pt-56"
@@ -19,16 +17,14 @@ const About = () => {
       id="about"
     >
       <Grid columns={12} gap={24} className="items-center">
-        {!isMobile && (
-          <div className="col-span-12 lg:col-span-6 rounded-2xl relative aspect-[4/3] hover:scale-95 transition-all duration-300 ease-in-out overflow-hidden">
-            <Image
-              src="/images/chisiamo.webp"
-              alt="Showroom Modare o dettaglio tessuto"
-              fill
-              className="object-cover transition-transform duration-300 ease-in-out will-change-transform hover:scale-120"
-            />
-          </div>
-        )}
+        <div className="col-span-12 lg:col-span-6 rounded-2xl relative aspect-[4/3] hover:scale-95 transition-all duration-300 ease-in-out overflow-hidden hidden lg:block">
+          <Image
+            src="/images/chisiamo.webp"
+            alt="Showroom Modare o dettaglio tessuto"
+            fill
+            className="object-cover transition-transform duration-300 ease-in-out will-change-transform hover:scale-120"
+          />
+        </div>
 
         <div className="col-span-12 lg:col-span-6">
           <Flex direction="col" gap={6}>
@@ -56,16 +52,14 @@ const About = () => {
           </Flex>
         </div>
 
-        {isMobile && (
-          <div className="col-span-12 lg:col-span-6 rounded-2xl relative aspect-[4/3] hover:scale-95 transition-all duration-300 ease-in-out overflow-hidden">
-            <Image
-              src="/images/chisiamo.webp"
-              alt="Showroom Modare o dettaglio tessuto"
-              fill
-              className="object-cover transition-transform duration-300 ease-in-out will-change-transform hover:scale-120"
-            />
-          </div>
-        )}
+        <div className="col-span-12 lg:col-span-6 rounded-2xl relative aspect-[4/3] hover:scale-95 transition-all duration-300 ease-in-out overflow-hidden block lg:hidden">
+          <Image
+            src="/images/chisiamo.webp"
+            alt="Showroom Modare o dettaglio tessuto"
+            fill
+            className="object-cover transition-transform duration-300 ease-in-out will-change-transform hover:scale-120"
+          />
+        </div>
       </Grid>
     </Section>
   );
