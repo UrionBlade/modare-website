@@ -27,7 +27,7 @@ export default function Map() {
       center={position}
       zoom={30}
       scrollWheelZoom={false}
-      className="h-full w-full rounded-3xl min-h-[300px]"
+      className="h-full w-full rounded-3xl min-h-[300px] z-0"
     >
       <TileLayer
         attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
