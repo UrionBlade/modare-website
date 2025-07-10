@@ -28,12 +28,12 @@ const About = () => {
 
         <div className="col-span-12 lg:col-span-6">
           <Flex direction="col" gap={6}>
-            <Heading variant="h2" as="h2" font="serif" weight="medium">
+            <Heading variant="h2" as="h2" font="sans" weight="medium">
               Chi siamo
             </Heading>
             <Paragraph
               className="text-paragraph leading-relaxed max-w-prose"
-              font="serif"
+              font="sans"
             >
               Fondata nel 2016 a Busto Arsizio, <strong>Modare</strong> è il
               risultato di oltre vent’anni di esperienza nel settore tessile.
@@ -43,7 +43,7 @@ const About = () => {
             </Paragraph>
             <Paragraph
               className="text-paragraph leading-relaxed max-w-prose"
-              font="serif"
+              font="sans"
             >
               Dai lini ai pizzi, dal cotone alle fantasie stampate, il nostro
               catalogo è pensato per soddisfare ogni esigenza estetica e
