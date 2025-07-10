@@ -9,10 +9,10 @@ import Image from "next/image";
 
 export default function ServiziBento() {
   return (
-    <Section className="py-32 bg-white" id="services">
+    <Section className="py-32 bg-white" id="services" padded={false}>
       <Grid columns={12} gap={24} className="items-center">
         {/* Missione - testo */}
-        <div className="col-span-12 lg:col-span-4 row-span-1 flex flex-col justify-between">
+        <div className="col-span-12 lg:col-span-4 flex flex-col justify-between">
           <Heading variant="h2" font="sans" weight="medium" className="mb-4">
             La nostra missione
           </Heading>
@@ -24,7 +24,7 @@ export default function ServiziBento() {
         </div>
 
         {/* Immagine decorativa */}
-        <div className="col-span-12 lg:col-span-8 row-span-1 relative rounded-3xl overflow-hidden aspect-[4/3] hover:scale-95 transition-all duration-300 ease-in-out">
+        <div className="col-span-12 lg:col-span-8 relative rounded-3xl overflow-hidden aspect-[4/3] hover:scale-95 transition-all duration-300 ease-in-out">
           <Image
             src="/images/services.webp"
             alt="Tessuto decorativo"
