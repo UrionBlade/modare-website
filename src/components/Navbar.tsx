@@ -18,9 +18,13 @@ const Navbar: React.FC<NavbarProps> = ({ fromOtherPage = false }) => {
       setScrollPercent(percentage);
     };
 
+    if (!window) return;
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  if (!window) return null; // Ensure window is available
 
   return (
     <div className="w-full fixed top-0 z-50 bg-white">
