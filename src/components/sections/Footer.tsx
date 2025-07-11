@@ -5,8 +5,8 @@ import { Button, Flex } from "@watermelonbros/watermelon-ui";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white px-12 py-20 rounded-t-[48px] mt-32">
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 items-start">
+    <footer className="bg-black text-white px-12 py-20 rounded-t-[48px] mt-32 ">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 items-start max-w-[1920px] mx-auto">
         {/* Colonna 1: Branding & Copyright */}
         <div className="flex flex-col gap-2">
           <span className="text-lg font-semibold tracking-wide">

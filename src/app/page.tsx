@@ -9,17 +9,18 @@ import Services from "@/components/sections/Services";
 const Home: NextPage = () => {
   return (
     <>
-      <main className="w-full p-10 overflow-x-hidden">
+      <div className="w-full h-full p-10 overflow-x-hidden">
         <Navbar />
+        <main className="w-full overflow-x-hidden max-w-[1920px] mx-auto">
+          <Hero />
 
-        <Hero />
+          <About />
 
-        <About />
+          <Services />
 
-        <Services />
-
-        <Contacts />
-      </main>
+          <Contacts />
+        </main>
+      </div>
 
       <Footer />
     </>

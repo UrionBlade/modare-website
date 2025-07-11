@@ -24,7 +24,7 @@ export default function ServiziBento() {
         </div>
 
         {/* Immagine decorativa */}
-        <div className="col-span-12 lg:col-span-8 relative rounded-3xl overflow-hidden aspect-[4/3] hover:scale-95 transition-all duration-300 ease-in-out">
+        <div className="col-span-12 lg:col-span-8 relative rounded-[48px] overflow-hidden aspect-[4/3] hover:scale-95 transition-all duration-300 ease-in-out">
           <Image
             src="/images/services.webp"
             alt="Tessuto decorativo"
