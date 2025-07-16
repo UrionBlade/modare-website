@@ -58,7 +58,7 @@ export default function CookiePolicyPage() {
           <Paragraph className="mb-2">
             Via del Roccolo 18 - 21152 - Busto Arsizio
           </Paragraph>
-          <Paragraph className="mb-2">P.IVA: [inserire P.IVA]</Paragraph>
+          <Paragraph className="mb-2">P.IVA: 035118900125</Paragraph>
           <Paragraph className="mb-2">
             Email: produzione@modaretessuti.com
           </Paragraph>

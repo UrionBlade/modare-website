@@ -7,17 +7,26 @@ import {
   Section,
 } from "@watermelonbros/watermelon-ui";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { fetchImages, TImage } from "@/utils";
 
 const Hero = () => {
-  const imagesURL = [
-    "/images/carousel/hero-1.jpg",
-    "/images/carousel/hero-2.jpg",
-    "/images/carousel/hero-3.jpg",
-    "/images/carousel/hero-4.jpg",
-    "/images/carousel/hero-5.jpg",
-  ];
+  const [images, setImages] = useState<TImage[]>([]);
+  const [imageReady, setImageReady] = useState(false);
+
+  const handleGetImages = async () => {
+    const images = await fetchImages();
+
+    if (!images) return;
+
+    setImages(images);
+  };
+
+  useEffect(() => {
+    handleGetImages();
+  }, []);
 
   return (
     <Section className="pt-16 overflow-x-hidden" padded={false} id="hero">
@@ -41,31 +50,69 @@ const Hero = () => {
                 Scopri di più
               </Button>
 
-              <Button variant="outline">Contattaci</Button>
+              <Button
+                variant="outline"
+                onClick={() => {
+                  document
+                    .getElementById("contacts")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Contattaci
+              </Button>
             </Flex>
           </div>
         </div>
         <div className="col-span-12 lg:col-span-6 relative min-h-[calc(100vh/3*2)] h-full">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={0}
-            slidesPerView={1}
-            loop={true}
-            className="h-full w-full relative rounded-[48px]"
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-          >
-            {imagesURL.map((image, index) => (
-              <SwiperSlide key={index}>
-                <Image
-                  src={image}
-                  alt={`Hero Image ${index + 1}`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (min-width: 769px) 100vw"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <div className="relative h-full w-full rounded-[48px]">
+            {/* Placeholder sempre visibile dietro */}
+
+            <Image
+              src="/images/hero-1.jpg"
+              alt="Hero Image Placeholder"
+              fill
+              className={`object-cover rounded-[48px] ${imageReady ? "opacity-0" : "opacity-100"} transition-opacity duration-75`}
+              sizes="(max-width: 768px) 100vw, (min-width: 769px) 100vw"
+            />
+
+            {/* Swiper sopra, trasparente finché non pronto */}
+            <div
+              className={`absolute inset-0 transition-opacity duration-500 ${imageReady ? "opacity-100" : "opacity-0"}`}
+            >
+              <Swiper
+                modules={[Autoplay]}
+                spaceBetween={0}
+                slidesPerView={1}
+                loop
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                className="h-full w-full relative rounded-[48px]"
+              >
+                {images.map((image, index) => (
+                  <SwiperSlide key={index}>
+                    <div>
+                      <Image
+                        src={image.url}
+                        alt={image.title}
+                        fill
+                        onLoad={() => {
+                          if (index === 0) setImageReady(true);
+                        }}
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (min-width: 769px) 100vw"
+                      />
+                      <Heading
+                        variant="h3"
+                        as="h3"
+                        className="absolute bottom-8 left-8 text-white bg-black bg-opacity-50 p-2 rounded-lg"
+                      >
+                        {image.title}
+                      </Heading>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
         </div>
       </Grid>
     </Section>

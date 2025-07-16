@@ -36,10 +36,10 @@ const About = () => {
               font="sans"
             >
               Fondata nel 2016 a Busto Arsizio, <strong>Modare</strong> è il
-              risultato di oltre vent’anni di esperienza nel settore tessile.
-              Offriamo una selezione curata di tessuti di qualità per
-              professionisti della moda, sartorie e aziende, con un servizio
-              personalizzato e una forte attenzione al cliente.
+              risultato di anni di esperienza nel settore tessile. Offriamo una
+              selezione curata di tessuti di qualità per professionisti della
+              moda, sartorie e aziende, con un servizio personalizzato e una
+              forte attenzione al cliente.
             </Paragraph>
             <Paragraph
               className="text-paragraph leading-relaxed max-w-prose"
@@ -51,15 +51,6 @@ const About = () => {
             </Paragraph>
           </Flex>
         </div>
-
-        {/* <div className="col-span-12 lg:col-span-6 rounded-2xl relative aspect-[4/3] hover:scale-95 transition-all duration-300 ease-in-out overflow-hidden block lg:hidden">
-          <Image
-            src="/images/chisiamo.webp"
-            alt="Showroom Modare o dettaglio tessuto"
-            fill
-            className="object-cover transition-transform duration-300 ease-in-out will-change-transform hover:scale-120"
-          />
-        </div> */}
       </Grid>
     </Section>
   );
